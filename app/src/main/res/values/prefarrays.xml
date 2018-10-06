@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="searchListArray">
+        <item>Show all</item>
+        <item>Owned only</item>
+        <item>Ignore owned</item>
+    </string-array>
+
+    <string-array name="searchLangListArray">
+        <item>Show all</item>
+        <item>English</item>
+        <item>Japanese</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="searchListValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+</resources>

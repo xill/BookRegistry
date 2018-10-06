@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Search">
+        <ListPreference android:title="Display settings"
+            android:summary="Show all"
+            android:key="searchType"
+            android:defaultValue="0"
+            android:entries="@array/searchListArray"
+            android:entryValues="@array/searchListValues" />
+        <ListPreference android:title="Language filter"
+            android:summary="Show all"
+            android:key="searchLangType"
+            android:defaultValue="0"
+            android:entries="@array/searchLangListArray"
+            android:entryValues="@array/searchListValues" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="General">
+
+    <CheckBoxPreference android:title="Download without wifi"
+        android:defaultValue="false"
+        android:summary="This option if selected will allow the application to download data without wifi connection."
+        android:key="wifilessDownload" />
+    <CheckBoxPreference android:title="Auto download"
+        android:defaultValue="true"
+        android:summary="This option if selected will allow the application to download data without prompting for it."
+        android:key="autoDownload" />
+    <CheckBoxPreference android:title="Auto mark owned"
+        android:defaultValue="false"
+        android:summary="This option if selected will mark new and old items as owned when scanned."
+        android:key="autoOwned" />
+
+    </PreferenceCategory>
+</PreferenceScreen>

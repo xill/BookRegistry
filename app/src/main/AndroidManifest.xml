@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xill.portablelibrary">
+
+    <uses-feature android:name="android.hardware.camera" android:required="true" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/launcher_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".LibrarySplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xill.portablelibrary.Camera.CameraActivity"/>
+        <activity android:name="com.xill.portablelibrary.Search.SearchViewActivity"/>
+        <activity android:name="com.xill.portablelibrary.History.HistoryActivity"/>
+        <activity android:name="com.xill.portablelibrary.EntryViewer.EntryViewActivity"/>
+        <activity android:name="com.xill.portablelibrary.preferences.PreferencesActivity"/>
+
+    </application>
+
+</manifest>
